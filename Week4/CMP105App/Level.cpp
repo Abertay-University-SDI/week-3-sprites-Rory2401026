@@ -1,5 +1,5 @@
 #include "Level.h"
-#include "Player.h"
+
 
 
 Level::Level(sf::RenderWindow* hwnd, Input* in)
@@ -30,6 +30,8 @@ void Level::handleInput(float dt)
 		window->close();
 	}
 
+	
+	player.handleInput(dt);
 }
 
 // Update game objects

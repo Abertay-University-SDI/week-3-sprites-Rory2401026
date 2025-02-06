@@ -20,12 +20,25 @@ Player::~Player()
 // handle user input
 void Player::handleInput(float dt)
 {
-	// Close window on Escape pressed.
-	if (input->isKeyDown(sf::Keyboard::A))
+	if (input->isKeyDown(sf::Keyboard::W))
 	{
-		
+		move(0, -1);
 	}
 
+	if (input->isKeyDown(sf::Keyboard::S))
+	{
+		move(0, 1);
+	}
+
+	if (input->isKeyDown(sf::Keyboard::D))
+	{
+		move(+1,0);
+	}
+
+	if (input->isKeyDown(sf::Keyboard::A))
+	{
+		move(-1, 0);
+	}
 }
 
 // Update game objects

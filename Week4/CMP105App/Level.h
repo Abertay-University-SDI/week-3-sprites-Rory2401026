@@ -6,7 +6,7 @@
 #include "Framework/GameObject.h"
 #include <string.h>
 #include <iostream>
-#include "Player.cpp"
+#include "Player.h"
 
 
 class Level : BaseLevel {
